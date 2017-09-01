@@ -1,0 +1,226 @@
+@import 'var';
+// -------------------base------------------------------
+*{ margin:0;padding:0; }
+ul,li{list-style:none;}
+a{text-decoration:none;}
+.fl{ float:left;}
+.fr{float:right;}
+.clearfix::after{content:''; height:0; display:block; clear:both; overflow:hidden; visibility:hidden;}
+//------------------- header-----------------------------
+.head{padding-left:32px; background:#FAFAFA; border-bottom:1px solid #E0E0E0;
+    .sign{
+        width:400px;
+        ul li{
+            float:left; font-size:$smallfont;line-height:30px;
+            a{
+                color:#666;
+            }
+            &:nth-child(2),&:nth-child(3){
+                margin-left:5px;
+            }
+        }
+    }
+    .infor{
+        float:right;
+        margin-right:40px;
+        ul{
+            li{
+                float:left;
+                line-height:30px;
+                position:relative;
+                a{
+                   margin-top:8px;
+                    display:block;
+                    height:14px;
+                    font-size:12px;
+                    line-height:14px;
+                    padding:0 12px;
+                    border-right:1px solid #ccc;
+                    color:#666666; 
+                }
+                .account{
+                    width:80px;
+                    position:absolute;
+                    top:23px;
+                    left:-9px;
+                    font-size:12px;
+                    border:1px solid #ccc;
+                    // display:none;
+                    li{
+                        color:$mainColor;
+                        a{
+                            display:block;
+                            border:0 none;
+                            text-align:center;
+                            width:60px;
+                            padding:5px;
+                            height: 12px;
+                            line-height:12px;
+                        }
+                    }
+                }
+                &:hover .account{
+                    display:block;
+                    background:#fff;
+                    border-top:1px solid #fff;
+                }
+                &:first-child:hover{
+                    background:#fff;
+                }
+                &:nth-child(3){
+                    a{
+                        border-right:0 none;
+                    }
+                }
+                &:nth-child(4){
+                    font-size:$normalfont;
+                    color:#FF1A3A;
+                }
+            }
+        }
+    }
+}
+//---------------- search---------------------------------
+.search{
+    height:90px;
+    padding-left:32px;
+    h1{
+        float:left;
+        width:230px;
+        height: 90px;
+    }
+    .search_m{
+        height:65px;
+        margin-left:125px;
+        padding-top:25px;
+        float:left;
+        width:450px;
+        input{
+            width:360px;
+            height:30px;
+            border:2px solid #02A3F0;
+        }
+        button{
+            width:70px;
+            height:30px;
+            background:#02A3F0;
+            border:0 none;
+            color:#fff;
+        }
+        p{
+            height:26px;
+            line-height:26px;
+            font-size:$smallfont;
+            a{
+                color:#000;
+                margin:0 5px;
+                &:nth-of-type(1),&:nth-of-type(4){
+                    color:#FF1A3A;
+                }
+            }
+        }
+    }
+    .shopcar{
+        margin-top:24px;
+        margin-left:200px;
+        width: 195px;
+        height: 42px;
+        background:#EFEFEF;
+        float:left;
+        line-height: 42px;
+        border-radius:21px;
+        box-shadow:1px 1px 1px 1px #ccc;
+        i{
+            display:inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius:20px;
+            border:1px solid #ccc;
+        }
+        p{
+           float:right;
+           margin-right:60px;
+           font-size:$smallfont;
+           color:$mainColor;
+           span{
+            display:inline-block;
+            width: 16px;
+            color:#f00;
+            text-align:center;
+           }
+        }
+    }
+}
+// ----------------------nav------------------------
+.nav{
+    height: 40px;
+    background:#110F10;
+    .list{
+        float:left;
+        margin-left:32px;
+        width: 230px;
+        .listname{
+            display:block;
+            background:#02B2ED;
+            color:#fff;
+            line-height: 40px;
+            text-align:center;
+        }
+    ul{
+        li{
+            padding:14px 0 0 20px;
+            height: 85px;
+            border-bottom:1px solid #E7E7E7;
+            background:#F8F8F8;
+            p{
+                height: 26px;
+                line-height: 26px;
+                color:#333333;
+                font-size:14px;
+                font-weight:bold;
+            }
+            a{
+                display:inline-block;
+                height: 22px;
+                line-height: 22px;
+                margin-right:10px;
+                font-size:12px;
+                color:#666666;
+                &.light{
+                    color:#FF1A3A;
+                }
+            }
+            &:last-child a{
+                margin-right:8px;
+            }
+        }
+    }  
+    }
+    .navlist{
+        float:left;
+        margin-left:10px;
+        ul{
+            li{
+                float:left;
+                a{
+                    display:block;
+                    padding:0 30px;
+                    font-size:16px;
+                    color:#fff;
+                    border-right:1px solid #565656;
+                    margin-top:10px;
+                    &:hover{
+                        color:#02B2ED;
+                    }
+                }
+                &:last-child a{
+                    border-right:0 none;
+                }
+                &:nth-child(6) a,&:nth-child(7) a{
+                    color:#FF1A3A;
+                }
+            }
+        }
+    }
+}
+    
