@@ -1,3 +1,51 @@
 #head .nav .list ul { display: none; }
 
-.filter { height: 1000px; }
+.container { padding-left: 30px; height: 1200px; }
+
+.container .current { margin-top: 15px; height: 34px; line-height: 34px; font-size: 14px; }
+
+.container .current a { color: #333333; }
+
+.container .current span { color: #4E7FC2; }
+
+.container .box-l { float: left; width: 230px; }
+
+.container .box-l .selist p { height: 34px; border-bottom: 1px solid #E0E0E0; background: #EDEDED; font-size: 14px; line-height: 34px; padding-left: 40px; color: #333; position: relative; }
+
+.container .box-l .selist p i { display: inline-block; position: absolute; top: 0; left: 10px; color: #f00; }
+
+.container .box-l .selist p span { font-size: 12px; color: #999; }
+
+.container .box-l .selist .content { border: 1px solid #E0E0E0; padding: 10px 0 0 36px; }
+
+.container .box-l .selist .content a { display: block; font-size: 12px; height: 28px; line-height: 28px; color: #333; }
+
+.container .box-l .selist .content a:hover { color: #FF8000; }
+
+.container .box-l .selist .content a span { color: #A599B2; }
+
+.container .box-r { float: left; width: 915px; height: 316px; border: 3px solid #F4F4F4; margin-left: 10px; padding: 22px 20px 0 20px; }
+
+.container .box-r ul li { border-bottom: 1px solid #F4F4F4; padding: 5px 0; }
+
+.container .box-r ul li .sp-1 { display: inline-block; width: 84px; text-align: center; color: #000; font-size: 14px; font-weight: bold; }
+
+.container .box-r ul li .sp-2 { display: inline-block; width: 32px; height: 20px; background: #02A3F0; text-align: center; line-height: 20px; color: #fff; font-size: 12px; }
+
+.container .box-r ul li .sp-f { width: 46px; position: relative; }
+
+.container .box-r ul li .sp-f::after { content: ''; display: block; height: 0; width: 0; border: 6px solid transparent; border-top: 6px solid #02A3F0; position: absolute; top: 20px; left: 35%; }
+
+.container .box-r ul li a { display: inline-block; text-align: center; color: #02A3F0; font-size: 12px; height: 22px; line-height: 22px; }
+
+.container .box-r ul li a:hover { background: #02A3F0; color: #fff; }
+
+.container .box-r ul li .cata-1 a { width: 50px; line-height: 22px; }
+
+.container .box-r ul li .cata-1 button { float: right; width: 58px; height: 22px; text-align: center; line-height: 22px; font-size: 12px; color: #333; background: #F7F7F7; border: 0 none; }
+
+.container .box-r ul li .cata { padding: 5px 0 5px 115px; }
+
+.container .box-r ul li .cata a { width: 74px; height: 26px; line-height: 26px; text-align: center; margin-right: 70px; }
+
+.container .box-r ul li .cata-2 a, .container .box-r ul li .cata-3 a, .container .box-r ul li .cata-4 a, .container .box-r ul li .cata-5 a { padding: 0 14px; }
