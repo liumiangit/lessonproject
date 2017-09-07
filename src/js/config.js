@@ -1,8 +1,8 @@
 //模块化开发配置文件
 require.config({
     paths:{
-        'jquery':'../lib/jquery-3.2.1',
-        'jqueryui':'../lib/jquery-ui-1.12.1/jquery-ui'
+        'jquery':'/lib/jquery-3.2.1',
+        'jqueryui':'/lib/jquery-ui-1.12.1/jquery-ui'
     },
     shim:{
         //设置插件之间的依赖

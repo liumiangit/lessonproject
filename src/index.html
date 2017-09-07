@@ -7,12 +7,751 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="./font-img/iconfont.css" />
     <script src="lib/require.js" data-main="js/index"></script>
+    <script src="js/common.js"></script>
+    <script src="js/banner.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded',function(){
+        new Banner({btnlr:false,img:['img/banner01.jpg','img/banner02.jpg','img/banner03.jpg','img/banner04.jpg'],ele:'.banner',gap:3000}).init();
+
+    })
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div id="header"></div>
-        <div class="holder"></div>
-        <div id="foot"></div>
+    <!-- header -->
+    <div id="header"></div>
+    <!-- banner -->
+    <div class="banner">
     </div>
+    <div class="navimg">
+        <img src="img/img-br1.jpg"/>
+        <img src="img/img-br2.jpg"/>
+        <img src="img/img-br3.jpg"/>
+    </div>
+    <div class="imglist">
+        <img src="img/mian-1.jpg"/>
+        <img src="img/mian-2.jpg"/>
+        <img src="img/mian-3.jpg"/>
+    </div>
+    <!-- sales -->
+    <div class="sales clearfix">
+        <p class="qg">限时抢购 <span>LIMIT BUY</span></p>
+        <ul>
+            <li>
+                <p class="time"><i class="iconfont naozhong"></i>剩余<span>12</span>小时<span>12</span>分<span>12</span>秒</p>
+                <img src="img/sale-1.jpg"/>
+                <p>AUPRES欧珀莱蕴泽水活睡眠面膜80g，调护颗粒融化渗透，释放水感能量</p>
+                <img src="img/qg.png"/>
+                <span></span>
+            </li>
+            <li>
+                <p class="time"><i class="iconfont naozhong"></i>剩余<span>12</span>小时<span>12</span>分<span>12</span>秒</p>
+                <img src="img/sale-2.jpg"/>
+                <p>SKIN FOOD思亲肤黄金鱼子酱赋活眼霜30ml，提拉紧致眼部轮廓。</p>
+                <img src="img/qg.png"/>
+            </li>
+            <li>
+                <p class="time"><i class="iconfont naozhong"></i>剩余<span>12</span>小时<span>12</span>分<span>12</span>秒</p>
+                <img src="img/sale-3.jpg"/>
+                <p>Guerlain 娇兰亲亲唇膏/黑管口红3.5g，赋予双唇天鹅绒般娇嫩柔润的芒果乳油</p>
+                <img src="img/qg.png"/>
+            </li>
+            <li>
+                <p class="time"><i class="iconfont naozhong"></i>剩余<span>12</span>小时<span>12</span>分<span>12</span>秒</p>
+                <img src="img/sale-4.jpg"/>
+                <p>OLAY玉兰油轻透倍护隔离防晒液40ml，让肌肤能够自由呼吸，尽享轻薄的防晒呵护</p>
+                <img src="img/qg.png"/>
+            </li>
+        </ul>
+    </div>
+    <!-- tab切换 -->
+    <div class="tab clearfix">
+        <div class="tab-t">
+            <ul class="clearfix">
+                <li>本周特价</li>
+                <li>明星推荐</li>
+                <li>新品上架</li>
+                <li>热评商品</li>
+                <li>超值小样</li>
+            </ul>
+        </div>
+        <div class="tab-cnt">
+            <div class="content">
+                <img src="img/tab-1.png" alt="" />
+            </div>
+            <div class="content">
+                <img src="img/tab-2.png" alt="" />
+            </div>
+            <div class="content">
+                <img src="img/tab-3.png" alt="" />
+            </div>
+            <div class="content">
+                <img src="img/tab-4.png" alt="" />
+            </div>
+            <div class="content">
+                <img src="img/tab-5.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- 品牌区 -->
+    <div class="pp">
+        <div class="pp-head clearfix">
+            <h3>品牌活动</h3>
+            <ul>
+                <li><span><a href="/html/list.html?type=pingpai">科颜氏3.3折起</a></span></li>
+                <li><span><a href="/html/list.html?type=pingpai">兰蔻专场1.6折起</a></span></li>
+                <li><span><a href="/html/list.html?type=pingpai">高丝雪肌精4.3折起</a></span></li>
+            </ul>
+        </div>
+        <div class="pp-img">
+            <ul>
+                <li>
+                    <a href="/html/list.html?type=pingpai"><img src="img/pp-1.jpg"/></a>      
+                </li>
+                <li>
+                    <a href="/html/list.html?type=pingpai"><img src="img/pp-2.jpg"/></a>      
+                </li>
+                <li>
+                    <a href="/html/list.html?type=pingpai"><img src="img/pp-3.jpg"/></a>      
+                </li>
+                <li>
+                    <a href="/html/list.html?type=pingpai"><img src="img/pp-4.jpg"/></a>      
+                </li>
+                <li>
+                    <a href="/html/list.html?type=pingpai"><img src="img/pp-5.jpg"/></a>      
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- skincare -->
+    <div class="skincare">
+        <div class="skin-h clearfix">
+            <h2>护肤 <span>SKIN CARE</span></h2>
+            <ul>
+                <li><a href="/html/list.html?type=skin">青碧三部曲</a></li>
+                <li><a href="/html/list.html?type=skin">小黑瓶</a></li>
+                <li><a href="/html/list.html?type=skin">卸妆油</a></li>
+                <li><a href="/html/list.html?type=skin">补水保湿</a></li>
+                <li><a href="/html/list.html?type=skin">补水面膜</a></li>
+                <li><a href="/html/list.html?type=skin">小棕瓶</a></li>
+                <li><a href="/html/list.html?type=skin">小石榴</a></li>          
+            </ul>
+        </div>
+        <div class="skin-m clearfix">
+            <div class="skin1">
+                <a href="/html/list.html?type=skin"><img src="img/skin-1.jpg"/></a>    
+            </div>
+            <div class="skin2">
+                <div class="skin21 skin211">
+                    <a href="/html/list.html?type=skin"><img src="img/skin-2.jpg"/></a>
+                    <p>Estee Lauder雅诗兰黛
+                    肌透修护精华胶囊</p>
+                    <p>高浓缩 精华胶囊 肌底密集修护</p>
+                    <p>￥768.00(8.1折)</p>
+                </div>
+                <div class="skin21">
+                    <a href="/html/list.html?type=skin"><img src="img/skin-3.jpg"/></a>
+                    <p>Estee Lauder雅诗兰黛
+                    肌透修护精华胶囊</p>
+                    <p>高浓缩 精华胶囊 肌底密集修护</p>
+                    <p>￥768.00(8.1折)</p>
+                </div>
+                <div class="skin22">
+                    <p>资生堂百优丰盈提拉紧致眼</p>
+                    <p>有效淡化皱纹和黑眼圈</p>
+                    <p>￥438.00(7.4折)</p>
+                    <a href="/html/list.html?type=skin"><img src="img/skin-4.jpg" /></a>
+                </div>
+                <div class="skin22">
+                    <p>资生堂百优丰盈提拉紧致眼</p>
+                    <p>有效淡化皱纹和黑眼圈</p>
+                    <p>￥438.00(7.4折)</p>
+                    <a href="/html/list.html?type=skin"><img src="img/skin-5.jpg" /></a>
+                </div>
+                <div class="skin22 skin221">
+                    <p>资生堂百优丰盈提拉紧致眼</p>
+                    <p>有效淡化皱纹和黑眼圈</p>
+                    <p>￥438.00(7.4折)</p>
+                    <a href="/html/list.html?type=skin"><img src="img/skin-6.jpg" /></a>
+                </div>
+            </div>
+            <div class="skin3">
+                <p class="skin3-h">护肤热销</p>
+                <ul>
+                    <li>
+                        <p class="skin-tl"><span>1</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=skin"><img src="img/skin-7.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>2</span>倩碧滋养修护眼霜</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=skin"><img src="img/skin-8.jpg" alt="倩碧滋养修护眼霜"/></a>
+                            <p>Clinique 倩碧滋养修护眼霜</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>3</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=skin"><img src="img/skin-9.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>4</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=skin"><img src="img/skin-10.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>5</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href=""><img src="img/skin-11.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>6</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href=""><img src="img/skin-12.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin-b clearfix">
+            <a href="/html/list.html?type=skin"><img src="img/skinm-1.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-2.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-3.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-4.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-5.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-6.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-7.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-8.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-9.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-10.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-11.jpg"/></a>
+            <a href="/html/list.html?type=skin"><img src="img/skinm-12.jpg"/></a>
+        </div>
+    </div>
+    <!-- makeup -->
+    <div class="makeup">
+        <div class="skin-h clearfix">
+            <h2>彩妆 <span>MAKE UP</span></h2>
+            <ul>
+                <li><a href="/html/list.html?type=makeup">气垫BB霜</a></li>
+                <li><a href="/html/list.html?type=makeup">粉饼</a></li>
+                <li><a href="/html/list.html?type=makeup">指甲油</a></li>
+                <li><a href="/html/list.html?type=makeup">睫毛膏</a></li>
+                <li><a href="/html/list.html?type=makeup">眼影</a></li>
+                <li><a href="/html/list.html?type=makeup">口红</a></li>
+                <li><a href="/html/list.html?type=makeup">迪奥</a></li>          
+            </ul>
+        </div>
+        <div class="skin-m clearfix">
+            <div class="skin1">
+                <a href="/html/list.html?type=makeup"><img src="img/mark-1.jpg"/></a>    
+            </div>
+            <div class="skin2">
+                <div class="skin21 skin211">
+                    <a href="/html/list.html?type=makeup"><img src="img/mark-2.jpg"/></a>
+                    <p>Estee Lauder雅诗兰黛
+                        持久完美粉底气垫BB粉</p>
+                    <p>控油持妆 隐匿毛孔</p>
+                    <p>￥355.00(8.5折)</p>
+                </div>
+                <div class="skin21">
+                    <a href="/html/list.html?type=makeup"><img src="img/mark-3.jpg"/></a>
+                    <p>Shiseido资生堂
+                        透润隔离霜/妆前乳 SS</p>
+                    <p>多效防护 抵御紫外线 改善暗沉 轻盈保湿</p>
+                    <p>￥299.00(7.7折)</p>
+                </div>
+                <div class="skin22">
+                    <p>妙巴黎天鹅绒唇彩釉</p>
+                    <p>液态唇膏 有漆光般效果</p>
+                    <p>￥99.00(6.7折)</p>
+                    <a href="/html/list.html?type=makeup"><img src="img/mark-4.jpg" /></a>
+                </div>
+                <div class="skin22">
+                    <p>赫拉赫妍高魅惑丰彩口红</p>
+                    <p>全智贤同款人鱼色</p>
+                    <p>￥229.00(4.6折)</p>
+                    <a href="/html/list.html?type=makeup"><img src="img/mark-5.jpg" /></a>
+                </div>
+                <div class="skin22 skin221">
+                    <p>canmake井田立体三色眉粉</p>
+                    <p>粉质细腻 容易上色</p>
+                    <p>￥55.00(7.1折)</p>
+                    <a href="/html/list.html?type=makeup"><img src="img/mark-6.jpg" /></a>
+                </div>
+            </div>
+            <div class="skin3">
+                <p class="skin3-h">彩妆热销</p>
+                <ul>
+                    <li>
+                        <p class="skin-tl"><span>1</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=makeup"><img src="img/mark-7.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>2</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=makeup"><img src="img/mark-8.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>3</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=makeup"><img src="img/mark-9.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>4</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href=""><img src="img/mark-10.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>5</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=makeup"><img src="img/mark-11.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>6</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <a href="/html/list.html?type=makeup"><img src="img/mark-12.jpg"/></a>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin-b clearfix">
+            <a href="/html/list.html?type=makeup"><img src="img/markm-1.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-2.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-3.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-4.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-5.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-6.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-7.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-8.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-9.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-10.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-11.jpg"/></a>
+            <a href="/html/list.html?type=makeup"><img src="img/markm-12.jpg"/></a>
+        </div>
+    </div>
+    <!-- perfume -->
+    <div class="perfume">
+        <div class="skin-h clearfix">
+            <h2>香水 <span>PERFUME</span></h2>
+            <ul>
+                <li><a href="/html/list.html?type=perfume">Dior</a></li>
+                <li><a href="/html/list.html?type=perfume">香奈儿</a></li>
+                <li><a href="/html/list.html?type=perfume">女士香水</a></li>
+                <li><a href="/html/list.html?type=perfume">男士香水</a></li>
+                <li><a href="/html/list.html?type=perfume">套装</a></li>
+                <li><a href="/html/list.html?type=perfume">Q版</a></li>       
+            </ul>
+        </div>
+        <div class="skin-m clearfix">
+            <img class="imgt" src="img/perfume-1.jpg"/>
+            <div class="imgm">
+                <img src="img/perfume-2.jpg"/>
+                <img src="img/perfume-4.jpg"/>
+                <img src="img/perfume-5.jpg"/>
+            </div>
+            <img class="imgb" src="img/perfume-3.jpg"/>
+            <div class="skin3">
+                <p class="skin3-h">香水热销</p>
+                <ul>
+                    <li>
+                        <p class="skin-tl"><span>1</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-6.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>2</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-7.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>3</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-8.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>4</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-9.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>5</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-10.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>6</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/perfume-11.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin-b clearfix">
+            <a href=""><img src="img/perfumem-1.jpg"/></a>
+            <a href=""><img src="img/perfumem-2.jpg"/></a>
+            <a href=""><img src="img/perfumem-3.jpg"/></a>
+            <a href=""><img src="img/perfumem-4.jpg"/></a>
+            <a href=""><img src="img/perfumem-5.jpg"/></a>
+            <a href=""><img src="img/perfumem-6.jpg"/></a>
+            <a href=""><img src="img/perfumem-7.jpg"/></a>
+            <a href=""><img src="img/perfumem-8.jpg"/></a>
+            <a href=""><img src="img/perfumem-9.jpg"/></a>
+            <a href=""><img src="img/perfumem-10.jpg"/></a>
+            <a href=""><img src="img/perfumem-11.jpg"/></a>
+            <a href=""><img src="img/perfumem-12.jpg"/></a>
+        </div>
+    </div>
+    <!-- men's -->
+    <div class="men">
+        <div class="skin-h clearfix">
+            <h2>男士 <span>MEN'S</span></h2>
+            <ul>
+                <li><a href="">剃须</a></li>
+                <li><a href="">欧碧泉男士</a></li>
+                <li><a href="">控油祛痘</a></li>
+                <li><a href="">洁面膏</a></li>
+                <li><a href="">Zippo</a></li>
+                <li><a href="">瑞士军刀</a></li>       
+            </ul>
+        </div>
+        <div class="skin-m clearfix">
+            <div class="imgall">
+                <div class="img-detail">
+                    <img src="img/men-1.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/men-2.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/men-3.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/men-4.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/men-5.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/men-6.jpg" alt="" />
+                    <p>碧欧泉男士水动力保湿乳</p>
+                    <p>￥238.00(5折)</p>
+                </div>
+            </div>
+            <div class="bigimg">
+                <img src="img/men-7.jpg" alt="" />
+            </div>
+            <div class="skin3">
+                <p class="skin3-h">男士热销</p>
+                <ul>
+                    <li>
+                        <p class="skin-tl"><span>1</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-8.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>2</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-9.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>3</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-10.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>4</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-11.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>5</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-12.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>6</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/men-13.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin-b clearfix">
+            <a href=""><img src="img/perfumem-1.jpg"/></a>
+            <a href=""><img src="img/perfumem-2.jpg"/></a>
+            <a href=""><img src="img/perfumem-3.jpg"/></a>
+            <a href=""><img src="img/perfumem-4.jpg"/></a>
+            <a href=""><img src="img/perfumem-5.jpg"/></a>
+            <a href=""><img src="img/perfumem-6.jpg"/></a>
+            <a href=""><img src="img/perfumem-7.jpg"/></a>
+            <a href=""><img src="img/perfumem-8.jpg"/></a>
+            <a href=""><img src="img/perfumem-9.jpg"/></a>
+            <a href=""><img src="img/perfumem-10.jpg"/></a>
+            <a href=""><img src="img/perfumem-11.jpg"/></a>
+            <a href=""><img src="img/perfumem-12.jpg"/></a>
+        </div>
+    </div>
+    <!-- body&hair -->
+    <div class="bodyhair">
+        <div class="skin-h clearfix">
+            <h2>美体美发 <span>BODY&HAIR</span></h2>
+            <ul>
+                <li><a href="">护手霜</a></li>
+                <li><a href="">洗发护发</a></li>
+                <li><a href="">丰胸</a></li>
+                <li><a href="">润体乳</a></li>
+                <li><a href="">防脱发</a></li>
+                <li><a href="">沐浴</a></li>       
+                <li><a href="">染发</a></li>       
+            </ul>
+        </div>
+        <div class="skin-m clearfix">
+            <div class="bigimg">
+                <img src="img/body-1.jpg" alt="" />
+            </div>
+            <div class="imgall">
+                <div class="img-detail">
+                    <img src="img/body-2.jpg" alt="" />
+                    <p>爱茉莉美仙玫瑰橄榄蜂蜜精油</p>
+                    <p>￥65.00(7.6折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/body-3.jpg" alt="" />
+                    <p>卡诗头皮系列去屑净化洗发水</p>
+                    <p>￥168.00(7折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/body-4.jpg" alt="" />
+                    <p>日本柳屋YANAGIYA发根营</p>
+                    <p>￥85.00(7.1折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/body-5.jpg" alt="" />
+                    <p>美源发采882#(棕黑色)</p>
+                    <p>￥65.00(6.8折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/body-6.jpg" alt="" />
+                    <p>爱茉莉 吕Ryo固发防脱洗发水</p>
+                    <p>￥58.00(6.6折)</p>
+                </div>
+                <div class="img-detail">
+                    <img src="img/body-7.jpg" alt="" />
+                    <p>卡诗双重菁纯轻润喷雾油</p>
+                    <p>￥298.00(7.1折)</p>
+                </div>
+            </div>
+            <div class="skin3">
+                <p class="skin3-h">男士热销</p>
+                <ul>
+                    <li>
+                        <p class="skin-tl"><span>1</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-8.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>2</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-9.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>3</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-10.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>4</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-11.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>5</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-12.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="skin-tl"><span>6</span>雅诗兰黛洁面乳</p>
+                        <div class="cont">
+                            <img src="img/body-13.jpg"/>
+                            <p>雅诗兰黛洁面乳</p>
+                            <span>￥35</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="skin-b clearfix">
+            <a href=""><img src="img/perfumem-1.jpg"/></a>
+            <a href=""><img src="img/perfumem-2.jpg"/></a>
+            <a href=""><img src="img/perfumem-3.jpg"/></a>
+            <a href=""><img src="img/perfumem-4.jpg"/></a>
+            <a href=""><img src="img/perfumem-5.jpg"/></a>
+            <a href=""><img src="img/perfumem-6.jpg"/></a>
+            <a href=""><img src="img/perfumem-7.jpg"/></a>
+            <a href=""><img src="img/perfumem-8.jpg"/></a>
+            <a href=""><img src="img/perfumem-9.jpg"/></a>
+            <a href=""><img src="img/perfumem-10.jpg"/></a>
+            <a href=""><img src="img/perfumem-11.jpg"/></a>
+            <a href=""><img src="img/perfumem-12.jpg"/></a>
+        </div>
+    </div>
+    <!-- new -->
+    <div class="new">
+        <div class="new-l">
+            <p class="newh">美容资讯</p>
+            <div class="new-l1">
+                <a href=""><img width="250" height="330" src="img/new-1.png"/></a>
+                <h3>根据场合选择防晒指数 这些新品帮你度</h3>
+                <p>很多女生在夏天最担心的一件事就是晒黑了，而这些今年春夏新出的防晒新品，<a href="#">[查看更多]</a></p>
+            </div>
+            <div class="new-l2">
+                <a href=""><img width="154 "height="118" src="img/new-2.png" alt="" /></a>
+                <a href=""><img width="154 "height="118" src="img/new-3.png" alt="" /></a>
+                <a href=""><img width="154 "height="118" src="img/new-4.png" alt="" />  </a>
+            </div>
+            <div class="new-l3">
+                <div class="new1">
+                    <p><span>香水</span>上万种香水类型 据说只有1%的人会选</p>
+                    <p>性感女人的标志除了恨天高，就是香水了。常在圈里混，撞衫撞脸已不新鲜，现在最新潮的就是“撞香”。跟美女撞了，叫高逼格有品位，跟豪放大妈... <a href="#">[详细]</a></p>
+                </div>
+                <div class="new1">
+                    <p><span>护肤</span>谁再说脂肪粒是因为眼霜 本宝宝要生气了</p>
+                    <p>我身边经常会有妹子说：我觉得这个眼霜实在是太油了，用了之后眼周起了好多脂肪粒，我要拉黑它！亲人们，你们眼周长的脂肪粒真的是因为眼霜吗... <a href="#">[详细]</a></p>
+                </div>
+                <div class="new1">
+                    <p><span>彩妆</span>根据肤质选隔离 你到底适合用什么？</p>
+                    <p>讲真，隔离霜满大街都是，便宜的有百元内的，贵的有近千元的。到底什么样的隔离霜才真的适合你？... <a href="#">[详细]</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="new-r">
+            <p class="phead">编辑推荐</p>
+            <ul>
+                <li>
+                    <div class="li-l"><p>AUPRES欧珀莱 男士俊士JS眼部沁凉滚</p>
+                    <p><a href=""><span>编辑推荐：</span>用了这款没多久，感觉眼袋跟黑眼圈的问题缓解了不少</a></p></div>
+                    <img width="82" height="82" src="img/new-5.png" />
+                </li>
+                <li>
+                    <div class="li-l"><p>Kiehl’s科颜氏(契尔氏)亚马逊白泥净致面</p>
+                    <p><a href=""><span>编辑推荐：</span>标准的125ml容量~简洁明了的瓶身~跟广告上面一模一样</a></p></div>
+                    <img width="82" height="82" src="img/new-6.png" />
+                </li>
+                <li>
+                    <div class="li-l"><p>HR 赫莲娜FELINE BLACKS猎豹防水睫</p>
+                    <p><a href=""><span>编辑推荐：</span>卷翘度也好，根根分明，防水力不错</a></p></div>
+                    
+                    <img width="82" height="82" src="img/new-7.png" />
+                </li>
+                <li>
+                    <div class="li-l"><p>Biotherm 碧欧泉修颜平肤隔离霜</p>
+                    <p><a href=""><span>编辑推荐：</span>非常满意。用过好多品种的牌子，这种最满意，保湿滋润美白</a></p></div>
+                    <img width="82" height="82" src="img/new-8.png" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 返顶按钮 -->
+    <div class="topbtn">
+        返回顶部
+        <i class="iconfont jiantou2"></i>
+    </div>
+    <div id="foot"></div>
 </body>
 </html>

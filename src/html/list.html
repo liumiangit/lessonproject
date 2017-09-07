@@ -6,16 +6,19 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/list.css" />
     <link rel="stylesheet" type="text/css" href="../font-img/iconfont.css" />
+<!--     <script src="/js/common.js"></script> -->
     <script src="../lib/require.js" data-main="../js/list"></script>
 </head>
 <body>
     <div id="head"></div>
-    <div class="container">
-        <p class="current">
-            <a href="../index.html">首页</a>
-            >
-            <span>面部护理</span>
-        </p>
+    <p class="current">
+        <a href="../index.html">首页</a>
+        >
+        <span>面部护理</span>
+    </p>
+    <!-- 主体内容 -->
+    <div class="box clearfix">
+        <!-- 左侧侧边栏 -->
         <div class="box-l">
             <div class="selist">
                     <p class="clickp"><i class="iconfont jiahao"></i>面部护理<span>(2999)</span></p>
@@ -101,14 +104,57 @@
                     </div>
             </div>
             <div class="hotsale">
-                <p>一周销量排行榜</p>
+                <p class="hott">一周销量排行榜</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <img src="/img/list-1.jpg"/>
+                        <p>Clinique 倩碧眼部护理水凝霜(水磁场眼...</p>
+                        <p>￥55.00</p>
+                    </li>
+                    <li>
+                        <img src="/img/list-2.jpg"/>
+                        <p>Clinique Lancome 兰蔻柔皙轻透防晒露SPF50 PA...</p>
+                        <p>￥96.00</p>
+                    </li>
+                    <li>
+                        <img src="/img/list-3.jpg"/>
+                        <p>Clarins 娇韵诗纤挺美胸凝露(17205...</p>
+                        <p>￥63.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="history">
+                <p class="hist">浏览过该类商品的顾客还购买了</p>
+                <ul>
+                    <li>
+                        <img width="82" height="82" src="/img/list-4.jpg"/>
+                        <p><a href="">SKIN FOOD 思亲肤水蜜桃清酒乳液</a></p>
+                        <p>￥<span>65.00</span></p>
+                    </li>
+                    <li>
+                        <img width="82" height="82" src="/img/list-5.jpg"/>
+                        <p><a href="">SKIN FOOD 思亲肤水蜜桃清酒乳液</a></p>
+                        <p>￥<span>65.00</span></p>
+                    </li>
+                    <li>
+                        <img width="82" height="82" src="/img/list-6.jpg"/>
+                        <p><a href="">SKIN FOOD 思亲肤水蜜桃清酒乳液</a></p>
+                        <p>￥<span>65.00</span></p>
+                    </li>
+                    <li>
+                        <img width="82" height="82" src="/img/list-7.jpg"/>
+                        <p><a href="">SKIN FOOD 思亲肤水蜜桃清酒乳液</a></p>
+                        <p>￥<span>65.00</span></p>
+                    </li>
+                    <li>
+                        <img width="82" height="82" src="/img/list-8.jpg"/>
+                        <p><a href="">SKIN FOOD 思亲肤水蜜桃清酒乳液</a></p>
+                        <p>￥<span>65.00</span></p>
+                    </li>
                 </ul>
             </div>
         </div>
+        <!-- 右侧筛选区域 -->
         <div class="box-r">  
                 <ul>
                     <li>
@@ -203,6 +249,22 @@
                     </li>
                 </ul>
         </div>
+        <!-- 页码控制区 -->
+        <div class="pagepre">
+            <span>排序:</span>
+            <span class="sorts">销量</span>
+            <span class="sortp">价格</span>
+            <span class="sorte">好评度</span>
+            <span class="total">共<strong>2344</strong>个商品</span>
+            <span class="pno"><strong>1</strong>/<strong class="strong">64</strong></span>
+            <span class="prep">上一页</span>
+            <span class="nextp">下一页</span>
+        </div>
+        <!-- 商品展示区 -->
+        <div class="goodlist clearfix">
+        </div>
+        <!-- 换页按钮 -->
+        <div class="page"></div>
     </div>
     <div id="foot"></div>
 </body>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * { margin: 0; padding: 0; }
 
 ul, li { list-style: none; }
@@ -10,7 +11,7 @@ a { text-decoration: none; }
 
 .clearfix::after { content: ''; height: 0; display: block; clear: both; overflow: hidden; visibility: hidden; }
 
-.head { padding-left: 32px; background: #FAFAFA; border-bottom: 1px solid #E0E0E0; }
+.head { padding: 0 32px; background: #FAFAFA; border-bottom: 1px solid #E0E0E0; width: 1200px; }
 
 .head .sign { width: 400px; }
 
@@ -22,29 +23,33 @@ a { text-decoration: none; }
 
 .head .infor { float: right; margin-right: 40px; }
 
-.head .infor ul li { float: left; line-height: 30px; position: relative; }
+.head .infor ul .inforli { float: left; height: 31px; line-height: 31px; position: relative; }
 
-.head .infor ul li a { margin-top: 8px; display: block; height: 14px; font-size: 12px; line-height: 14px; padding: 0 12px; border-right: 1px solid #ccc; color: #666666; }
+.head .infor ul .inforli .inlist { margin-top: 8px; display: block; height: 14px; font-size: 12px; line-height: 14px; padding: 0 12px; border-right: 1px solid #ccc; color: #666666; }
 
-.head .infor ul li:first-child a { padding-right: 24px; }
+.head .infor ul .inforli:first-child .inlist { padding: 0 10px 0; }
 
-.head .infor ul li:first-child i { position: absolute; top: 0; right: 6px; }
+.head .infor ul .inforli:first-child .inlist span { display: inline-block; width: 80px; text-align: center; height: 31px; }
 
-.head .infor ul li .account { width: 83px; position: absolute; top: 25px; left: 0px; font-size: 12px; border: 1px solid #ccc; }
+.head .infor ul .inforli:first-child i { position: absolute; top: 0; right: 10px; font-size: 12px; }
 
-.head .infor ul li .account li { color: #666; }
+.head .infor ul .inforli .account { height: 84px; width: 100px; position: absolute; top: 30px; left: 0px; font-size: 12px; border: 1px solid #ccc; padding-bottom: 5px; display: none; }
 
-.head .infor ul li .account li a { display: block; border: 0 none; text-align: center; width: 60px; padding: 5px; height: 12px; line-height: 12px; }
+.head .infor ul .inforli .account li { height: 22px; color: #666; text-align: center; }
 
-.head .infor ul li:hover .account { display: block; background: #fff; border-top: 3px solid #fff; }
+.head .infor ul .inforli .account li a { display: block; border: 0 none; text-align: center; font-size: 12px; height: 22px; width: 100px; line-height: 22px; color: #666; }
 
-.head .infor ul li:first-child:hover { background: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+.head .infor ul .inforli .account li a:hover { color: #FF1A3A; text-decoration: underline; }
 
-.head .infor ul li:nth-child(3) a { border-right: 0 none; }
+.head .infor ul .inforli:hover .account { display: block; background: #fff; border-top: 3px solid #fff; }
 
-.head .infor ul li:nth-child(4) { font-size: 16px; color: #FF1A3A; }
+.head .infor ul .inforli:first-child:hover { background: #fff; }
 
-.search { height: 90px; padding-left: 32px; }
+.head .infor ul .inforli:nth-child(3) a { border-right: 0 none; }
+
+.head .infor ul .inforli:nth-child(4) { font-size: 16px; color: #FF1A3A; }
+
+.search { width: 1200px; height: 90px; padding-left: 32px; }
 
 .search h1 { float: left; width: 230px; height: 90px; }
 
@@ -60,23 +65,61 @@ a { text-decoration: none; }
 
 .search .search_m p a:nth-of-type(1), .search .search_m p a:nth-of-type(4) { color: #FF1A3A; }
 
-.search .shopcar { margin-top: 24px; margin-left: 200px; width: 195px; height: 42px; background: #EFEFEF; float: left; line-height: 42px; border-radius: 21px; box-shadow: 1px 1px 1px 1px #ccc; }
+.search .shopcar { position: relative; margin-top: 24px; margin-left: 200px; width: 195px; height: 42px; background: #EFEFEF; float: left; line-height: 42px; border-radius: 21px; box-shadow: 1px 1px 1px 1px #ccc; z-index: 20000; }
+
+.search .shopcar:hover { background: #fff; border-bottom: 2px solid #fff; }
+
+.search .shopcar:hover .cargoods { display: block; }
 
 .search .shopcar i { display: inline-block; width: 40px; height: 40px; border-radius: 20px; border: 1px solid #ccc; text-align: center; line-height: 40px; font-size: 26px; color: #F13521; }
 
-.search .shopcar p { float: right; margin-right: 60px; font-size: 12px; color: #666; }
+.search .shopcar .cart { float: right; margin-right: 60px; font-size: 12px; color: #666; }
 
-.search .shopcar p span { display: inline-block; width: 16px; color: #f00; text-align: center; }
+.search .shopcar .cart span { display: inline-block; width: 16px; color: #f00; text-align: center; }
 
-.nav { height: 40px; background: #110F10; }
+.search .cargoods { position: absolute; top: 42px; right: 16px; width: 307px; border: 1px solid #ccc; z-index: 1000; display: none; }
 
-.nav .list { float: left; margin-left: 32px; width: 230px; position: relative; }
+.search .cargoods .carlist { max-height: 300px; overflow: auto; }
+
+.search .cargoods .carlist li { height: 66px; border-bottom: 1px dotted #ccc; background: #fff; }
+
+.search .cargoods .carlist li img { margin-top: 8px; width: 50px; height: 50px; float: left; }
+
+.search .cargoods .carlist li .listname { float: left; width: 130px; font-size: 12px; color: #666; line-height: 18px; margin-left: 10px; margin-top: 10px; }
+
+.search .cargoods .carlist li .carprice { padding-left: 10px; height: 66px; float: left; width: 90px; }
+
+.search .cargoods .carlist li .carprice span { color: #FF1A3A; }
+
+.search .cargoods .carlist li .carprice .pric::before { content: '￥'; }
+
+.search .cargoods .carlist li .carprice .qty::before { content: 'x'; margin: 0 3px; }
+
+.search .cargoods .carlist li .carprice p { height: 30px; font-size: 12px; color: #666; text-align: center; }
+
+.search .cargoods .carlist li .carprice button { margin-left: 25px; }
+
+.search .cargoods .carbot { text-align: center; height: 60px; background: #F8F8F8; padding: 7px; }
+
+.search .cargoods .carbot p { font-size: 12px; color: #666; line-height: 18px; }
+
+.search .cargoods .carbot p span { margin: 0 10px; }
+
+.search .cargoods .carbot p strong { margin: 0 5px; color: #FF1A3A; }
+
+.search .cargoods .carbot p .str2::before { content: '￥'; }
+
+.search .cargoods .carbot button { width: 100px; height: 30px; background: #FC1C5A; line-height: 30px; text-align: center; color: #fff; border: 0 none; }
+
+.nav { padding: 0 32px; width: 1200px; height: 40px; background: #110F10; }
+
+.nav .list { float: left; width: 230px; position: relative; }
 
 .nav .list .listname { display: block; background: #02B2ED; color: #fff; line-height: 40px; text-align: center; }
 
-.nav .list ul { position: absolute; top: 40px; left: 0; }
+.nav .list ul { position: absolute; background: #fff; top: 40px; left: 0; }
 
-.nav .list ul .firstli { padding: 14px 0 0 20px; height: 85px; border-bottom: 1px solid #E7E7E7; background: #F8F8F8; position: relative; }
+.nav .list ul .firstli { padding: 0 0 0 20px; height: 82px; border-bottom: 1px solid #E7E7E7; background: #F8F8F8; position: relative; }
 
 .nav .list ul .firstli p { height: 26px; line-height: 26px; color: #333333; font-size: 14px; font-weight: bold; }
 
@@ -86,7 +129,7 @@ a { text-decoration: none; }
 
 .nav .list ul .firstli a:hover { color: #02B2ED; }
 
-.nav .list ul .firstli:hover { background: #fff; border-left: 1px solid #02B2ED; border-bottom: 0 none; z-index: 1000; }
+.nav .list ul .firstli:hover { background: #fff; border-left: 2px solid #02B2ED; border-bottom: 0 none; z-index: 1000; width: 208px; }
 
 .nav .list ul .firstli:hover .sidenav { display: block; }
 
@@ -104,23 +147,23 @@ a { text-decoration: none; }
 
 .nav .list ul .firstli:nth-child(7) .sidenav .commend i { background-position: 0 -400px; }
 
-.nav .list ul .firstli .sidenav { width: 671px; position: absolute; top: 20px; left: 230px; border: 1px solid #ccc; border-left: 0 none; display: none; padding-top: 0 none; }
+.nav .list ul .firstli .sidenav { width: 671px; position: absolute; top: 20px; left: 228px; border: 1px solid #ccc; border-left: 0 none; display: none; }
 
-.nav .list ul .firstli .sidenav ul { padding: 0 20px; float: left; }
+.nav .list ul .firstli .sidenav > ul { top: 0; padding: 0 20px; float: left; }
 
-.nav .list ul .firstli .sidenav ul li { margin: 0; padding: 0; height: 46px; width: 401px; background: #fff; border-bottom: 1px dotted #ccc; }
+.nav .list ul .firstli .sidenav > ul li { margin: 0; padding: 0; height: 46px; width: 401px; background: #fff; border-bottom: 1px dotted #ccc; }
 
-.nav .list ul .firstli .sidenav ul li span { float: left; text-align: left; height: 46px; width: 56px; line-height: 46px; font-size: 14px; font-weight: bold; color: #444; }
+.nav .list ul .firstli .sidenav > ul li span { float: left; text-align: left; height: 46px; width: 56px; line-height: 46px; font-size: 14px; font-weight: bold; color: #444; }
 
-.nav .list ul .firstli .sidenav ul li:nth-child(1), .nav .list ul .firstli .sidenav ul li:nth-child(2), .nav .list ul .firstli .sidenav ul li:nth-child(8) { height: 66px; }
+.nav .list ul .firstli .sidenav > ul li:nth-child(1), .nav .list ul .firstli .sidenav > ul li:nth-child(2), .nav .list ul .firstli .sidenav > ul li:nth-child(8) { height: 66px; }
 
-.nav .list ul .firstli .sidenav ul li:nth-child(1) span, .nav .list ul .firstli .sidenav ul li:nth-child(2) span, .nav .list ul .firstli .sidenav ul li:nth-child(8) span { height: 66px; line-height: 66px; }
+.nav .list ul .firstli .sidenav > ul li:nth-child(1) span, .nav .list ul .firstli .sidenav > ul li:nth-child(2) span, .nav .list ul .firstli .sidenav > ul li:nth-child(8) span { height: 66px; line-height: 66px; }
 
-.nav .list ul .firstli .sidenav ul li .span-list { float: left; width: 330px; overflow: hidden; padding-top: 12px; margin-left: 15px; }
+.nav .list ul .firstli .sidenav > ul li .span-list { float: left; width: 330px; overflow: hidden; padding-top: 12px; margin-left: 15px; }
 
-.nav .list ul .firstli .sidenav ul li .span-list a { float: left; font-size: 12px; color: #666; margin: 0 7px; height: 22px; line-height: 22px; }
+.nav .list ul .firstli .sidenav > ul li .span-list a { float: left; font-size: 12px; color: #666; margin: 0 7px; height: 22px; line-height: 22px; }
 
-.nav .list ul .firstli .sidenav ul li .span-list a:hover { color: #02B2ED; }
+.nav .list ul .firstli .sidenav > ul li .span-list a:hover { color: #02B2ED; }
 
 .nav .list ul .firstli .sidenav .commend { float: right; background: #F8F8F8; padding: 0 14px; width: 230px; box-sizing: border-box; }
 
@@ -144,13 +187,13 @@ a { text-decoration: none; }
 
 .nav .navlist ul li:nth-child(6) a, .nav .navlist ul li:nth-child(7) a { color: #FF1A3A; }
 
-.foot { height: 407px; }
+.foot { width: 1200px; height: 407px; }
 
-.foot .foot_h { padding: 25px 0; height: 150px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #F9F9F9; }
+.foot .foot_h { width: 1200px; padding: 25px 32px; height: 150px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; background: #F9F9F9; }
 
-.foot .foot_h .telinfor { float: left; border-right: 1px solid #E1E1E1; padding-left: 76px; width: 240px; height: 150px; position: relative; }
+.foot .foot_h .telinfor { float: left; border-right: 1px solid #E1E1E1; padding-left: 34px; width: 240px; height: 150px; position: relative; }
 
-.foot .foot_h .telinfor i { position: absolute; top: -6px; left: 100px; font-size: 40px; }
+.foot .foot_h .telinfor i { position: absolute; top: -6px; left: 40px; font-size: 40px; }
 
 .foot .foot_h .telinfor p:nth-of-type(1) { margin-left: 70px; color: #FF1A3A; font-size: 16px; height: 18px; line-height: 18px; }
 

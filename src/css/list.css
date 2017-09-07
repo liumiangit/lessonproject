@@ -1,51 +1,127 @@
 #head .nav .list ul { display: none; }
 
-.container { padding-left: 30px; height: 1200px; }
+.current { padding: 0 30px; width: 1200px; margin-top: 15px; height: 34px; line-height: 34px; font-size: 14px; }
 
-.container .current { margin-top: 15px; height: 34px; line-height: 34px; font-size: 14px; }
+.current a { color: #333333; }
 
-.container .current a { color: #333333; }
+.current span { color: #4E7FC2; }
 
-.container .current span { color: #4E7FC2; }
+.box { width: 1200px; padding: 0 30px; }
 
-.container .box-l { float: left; width: 230px; }
+.box .box-l { float: left; width: 230px; }
 
-.container .box-l .selist p { height: 34px; border-bottom: 1px solid #E0E0E0; background: #EDEDED; font-size: 14px; line-height: 34px; padding-left: 40px; color: #333; position: relative; }
+.box .box-l .selist p { height: 34px; border-bottom: 1px solid #E0E0E0; background: #EDEDED; font-size: 14px; line-height: 34px; padding-left: 40px; color: #333; position: relative; }
 
-.container .box-l .selist p i { display: inline-block; position: absolute; top: 0; left: 10px; color: #f00; }
+.box .box-l .selist p i { display: inline-block; position: absolute; top: 0; left: 10px; color: #f00; }
 
-.container .box-l .selist p span { font-size: 12px; color: #999; }
+.box .box-l .selist p span { font-size: 12px; color: #999; }
 
-.container .box-l .selist .content { border: 1px solid #E0E0E0; padding: 10px 0 0 36px; }
+.box .box-l .selist .content { border: 1px solid #E0E0E0; padding: 10px 0 0 36px; }
 
-.container .box-l .selist .content a { display: block; font-size: 12px; height: 28px; line-height: 28px; color: #333; }
+.box .box-l .selist .content a { display: block; font-size: 12px; height: 28px; line-height: 28px; color: #333; }
 
-.container .box-l .selist .content a:hover { color: #FF8000; }
+.box .box-l .selist .content a:hover { color: #FF8000; }
 
-.container .box-l .selist .content a span { color: #A599B2; }
+.box .box-l .selist .content a span { color: #A599B2; }
 
-.container .box-r { float: left; width: 915px; height: 316px; border: 3px solid #F4F4F4; margin-left: 10px; padding: 22px 20px 0 20px; }
+.box .box-l .hotsale { margin-top: 10px; border: 1px solid #ccc; }
 
-.container .box-r ul li { border-bottom: 1px solid #F4F4F4; padding: 5px 0; }
+.box .box-l .hotsale .hott { height: 34px; line-height: 34px; font-size: 14px; color: #333; background: #F0F0F0; text-align: center; border-bottom: 1px solid #ccc; }
 
-.container .box-r ul li .sp-1 { display: inline-block; width: 84px; text-align: center; color: #000; font-size: 14px; font-weight: bold; }
+.box .box-l .hotsale ul li { text-align: center; height: 172px; border-bottom: 1px dotted #666; padding: 10px 0; }
 
-.container .box-r ul li .sp-2 { display: inline-block; width: 32px; height: 20px; background: #02A3F0; text-align: center; line-height: 20px; color: #fff; font-size: 12px; }
+.box .box-l .hotsale ul li p:nth-of-type(1) { font-size: 12px; color: #666; }
 
-.container .box-r ul li .sp-f { width: 46px; position: relative; }
+.box .box-l .hotsale ul li p:nth-of-type(2) { margin-top: 6px; font-size: 14px; color: #FF1A3A; }
 
-.container .box-r ul li .sp-f::after { content: ''; display: block; height: 0; width: 0; border: 6px solid transparent; border-top: 6px solid #02A3F0; position: absolute; top: 20px; left: 35%; }
+.box .box-l .hotsale ul li:last-child { border-bottom: 0 none; }
 
-.container .box-r ul li a { display: inline-block; text-align: center; color: #02A3F0; font-size: 12px; height: 22px; line-height: 22px; }
+.box .box-l .history { margin-top: 10px; }
 
-.container .box-r ul li a:hover { background: #02A3F0; color: #fff; }
+.box .box-l .history .hist { height: 34px; line-height: 34px; font-size: 14px; color: #333; background: #F0F0F0; text-align: center; border-bottom: 1px solid #ccc; }
 
-.container .box-r ul li .cata-1 a { width: 50px; line-height: 22px; }
+.box .box-l .history ul { border: 1px solid #ccc; }
 
-.container .box-r ul li .cata-1 button { float: right; width: 58px; height: 22px; text-align: center; line-height: 22px; font-size: 12px; color: #333; background: #F7F7F7; border: 0 none; }
+.box .box-l .history ul li { height: 114px; border-bottom: 1px dotted #ccc; }
 
-.container .box-r ul li .cata { padding: 5px 0 5px 115px; }
+.box .box-l .history ul li:last-child { border-bottom: 0 none; }
 
-.container .box-r ul li .cata a { width: 74px; height: 26px; line-height: 26px; text-align: center; margin-right: 70px; }
+.box .box-l .history ul li img { margin-top: 24px; float: left; }
 
-.container .box-r ul li .cata-2 a, .container .box-r ul li .cata-3 a, .container .box-r ul li .cata-4 a, .container .box-r ul li .cata-5 a { padding: 0 14px; }
+.box .box-l .history ul li p:nth-of-type(1) { float: left; font-size: 12px; color: #666; line-height: 20px; margin-top: 30px; height: 40px; width: 96px; margin-left: 20px; text-align: center; }
+
+.box .box-l .history ul li p:nth-of-type(2) { float: left; font-size: 12px; color: #FF1A3A; margin-left: 50px; margin-top: 10px; }
+
+.box .box-r { float: left; width: 910px; height: 316px; border: 3px solid #F4F4F4; margin-left: 10px; padding: 22px 20px 0 20px; }
+
+.box .box-r ul li { border-bottom: 1px solid #F4F4F4; padding: 5px 0; }
+
+.box .box-r ul li .sp-1 { display: inline-block; width: 84px; text-align: center; color: #000; font-size: 14px; font-weight: bold; }
+
+.box .box-r ul li .sp-2 { display: inline-block; width: 32px; height: 20px; background: #02A3F0; text-align: center; line-height: 20px; color: #fff; font-size: 12px; }
+
+.box .box-r ul li .sp-f { width: 46px; position: relative; }
+
+.box .box-r ul li .sp-f::after { content: ''; display: block; height: 0; width: 0; border: 6px solid transparent; border-top: 6px solid #02A3F0; position: absolute; top: 20px; left: 35%; }
+
+.box .box-r ul li a { display: inline-block; text-align: center; color: #02A3F0; font-size: 12px; height: 22px; line-height: 22px; }
+
+.box .box-r ul li a:hover { background: #02A3F0; color: #fff; }
+
+.box .box-r ul li .cata-1 a { width: 50px; line-height: 22px; }
+
+.box .box-r ul li .cata-1 button { float: right; width: 58px; height: 22px; text-align: center; line-height: 22px; font-size: 12px; color: #333; background: #F7F7F7; border: 0 none; }
+
+.box .box-r ul li .cata { padding: 5px 0 5px 115px; }
+
+.box .box-r ul li .cata a { width: 74px; height: 26px; line-height: 26px; text-align: center; margin-right: 70px; }
+
+.box .box-r ul li .cata-2 a, .box .box-r ul li .cata-3 a, .box .box-r ul li .cata-4 a, .box .box-r ul li .cata-5 a { padding: 0 14px; }
+
+.box .pagepre { margin-top: 10px; width: 960px; margin-left: 10px; float: left; height: 36px; background: #FDFDFD; border-top: 2px solid #02B2ED; line-height: 36px; }
+
+.box .pagepre span { font-size: 12px; color: #666; padding: 2px 10px; -webkit-user-select: none; }
+
+.box .pagepre span strong { color: #FC1C5A; }
+
+.box .pagepre span .strong { color: #666; }
+
+.box .pagepre span:nth-child(2), .box .pagepre span:nth-child(3), .box .pagepre span:nth-child(4) { border: 1px solid #ccc; cursor: pointer; }
+
+.box .pagepre span:nth-child(5) { margin-left: 440px; }
+
+.box .pagepre span:nth-child(5) { border-right: 2px solid #ccc; }
+
+.box .pagepre span:nth-child(5) { color: #FC1C5A; }
+
+.box .pagepre span:nth-child(7), .box .pagepre span:nth-child(8) { border: 1px solid #ccc; border-radius: 2px; cursor: pointer; }
+
+.box .goodlist { float: left; width: 960px; height: 1960px; margin-top: 10px; margin-left: 10px; }
+
+.box .goodlist ul li { float: left; width: 200px; height: 310px; padding: 10px 20px; }
+
+.box .goodlist ul li:hover { background: #eee; }
+
+.box .goodlist ul li p:nth-of-type(1) { font-size: 12px; height: 40px; line-height: 20px; color: #666; }
+
+.box .goodlist ul li p:nth-of-type(1) a { color: #666; }
+
+.box .goodlist ul li p:nth-of-type(1) a:hover { color: #FF1A3A; text-decoration: underline; }
+
+.box .goodlist ul li p:nth-of-type(2) { font-size: 14px; height: 24px; color: #FF1A3A; line-height: 24px; }
+
+.box .goodlist ul li div button { border: 0 none; }
+
+.box .goodlist ul li div button:hover { cursor: pointer; }
+
+.box .goodlist ul li div button:first-child { width: 90px; height: 24px; background: #FF1A3A; border-radius: 3px; color: #fff; }
+
+.box .goodlist ul li div button:last-child { width: 58px; height: 24px; background: #EFEFEF; color: #666; border: 1px solid #dfdfdf; margin-left: 10px; border-radius: 3px; }
+
+.box .page { line-height: 60px; height: 60px; float: right; }
+
+.box .page .btn { background: #02B2ED; color: #fff; }
+
+.box .page span { padding: 4px 10px; border: 1px solid #666; margin: 0 5px; font-size: 12px; -webkit-user-select: none; }
+
+.box .page span:hover { cursor: pointer; }
