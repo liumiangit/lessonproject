@@ -2,12 +2,23 @@
 * @Author: liumian
 * @Date:   2017-08-31 15:03:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-05 12:58:06
+* @Last Modified time: 2017-09-09 16:52:12
 */
 require(['config'],function(){
     require(['jquery','common','jqueryui'],function($,com,jqui){
-        $('#header').load('html/base.html .header')
+        $('#head').load('html/base.html .header')
         $('#foot').load('html/base.html .foot')
+        require(['/js/base'],function(){
+
+        // $slidenav.show();
+        // $(window).on('scroll',function(){
+        //     var scrolltop = $(window).scrollTop();
+        //     if(scrolltop>500){
+        //         $slidenav.hide(); 
+        //     }else{
+        //         $slidenav.show();
+        //     }       
+        // })      
         // tab切换
         $tabT = $('.tab .tab-t ul');
         $content = $('.tab-cnt .content');
@@ -116,7 +127,7 @@ require(['config'],function(){
         })
         //返顶动画
         $topbtn = $('.topbtn');
-        $(window).on('scroll',function(){
+        $(document).on('scroll',function(){
             var scrollTop = $(window).scrollTop();
             //当滚动到一定距离时，显示按钮
             if(scrollTop>800){
@@ -151,6 +162,6 @@ require(['config'],function(){
                 $ptime.eq(i).find('span').eq(2).text(sec); 
             }   
         },1000)
-        console.log($ptime)
+    })
     })
 })

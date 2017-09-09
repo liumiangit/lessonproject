@@ -29,6 +29,9 @@
                 padding-left:40px;
                 color:#333;
                 position:relative;
+                &:hover{
+                    cursor:pointer;
+                }
                 i{
                     display:inline-block;
                     position:absolute;
@@ -301,6 +304,16 @@
                     height:24px;
                     color:#FF1A3A;
                     line-height:24px;
+                    span:nth-child(2){
+                        margin-left:8px;
+                    }
+                    .sqty{
+                        margin-left:10px;
+                        color:#666;
+                        &::before{
+                            content:'销量:';
+                        }
+                    }
                 }
                 div{
                     button{
@@ -322,7 +335,7 @@
                         background:#EFEFEF;
                         color:#666;
                         border:1px solid #dfdfdf;
-                        margin-left:10px;
+                        margin-left:20px;
                         border-radius:3px;
                     }
                 }

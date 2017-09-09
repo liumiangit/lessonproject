@@ -1,12 +1,28 @@
 <?php
-    //引入其他php文件
-    include 'connect.php';
+    // //引入其他php文件
+    // include 'connect.php';
+    //配置参数
+     $servername = 'localhost';
+     $username = 'root';
+     $password = '';
+     $database = 'project';
+    //链接数据库
+     $conn = new mysqli($servername,$username,$password,$database);
+
+    //检测连接
+    if($conn->connect_errno){
+        die('连接失败'.$conn->connect_errno);
+    }
+
+// 设置编码
+    $conn->set_charset('utf8');
     
     // 获取前端传过来的数据
     $pageNo = isset($_GET['pageNo']) ? $_GET['pageNo'] : 1;
-    $qty = isset($_GET['qty']) ? $_GET['qty'] : 10;
+    $qty = isset($_GET['qty']) ? $_GET['qty'] : 24;
     $cate = isset($_GET['cate']) ? $_GET['cate'] : '';
-
+    $sqty = isset($_GET['sqty'])?$_GET['sqty'] : '';
+    $price = isset($_GET['price'])?$GET['price'] : '';
     // 编写sql语句
     $sql = "select * from goods";
 
@@ -14,7 +30,12 @@
     if($cate){
         $sql .= " where category='$cate'";
     }
-
+    if($sqty){
+        $sql .= " order by $sqty desc";
+    }
+    if($price){
+        $sql .=" order by $price";
+    }
     $startIdx = $qty*($pageNo-1);
 
     $sql .= " limit $startIdx,$qty";
@@ -30,8 +51,8 @@
 
     
     
-    /*//释放查询结果集
-    $result->close();*/
+    //释放查询结果集
+    $result->close();
 
     // 格式化数据
     // 关联数组

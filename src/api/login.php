@@ -1,5 +1,20 @@
 <?php
-    include 'connect.php';
+    // include 'connect.php';
+    //配置参数
+     $servername = 'localhost';
+     $username = 'root';
+     $password = '';
+     $database = 'project';
+    //链接数据库
+     $conn = new mysqli($servername,$username,$password,$database);
+
+    //检测连接
+    if($conn->connect_errno){
+        die('连接失败'.$conn->connect_errno);
+    }
+
+// 设置编码
+    $conn->set_charset('utf8');
     
     $username = isset($_GET['username']) ? $_GET['username'] : '';
     $password = isset($_GET['password']) ? $_GET['password'] : '';
@@ -9,7 +24,7 @@
 
     $sql = "select * from user where username='$username' and password='$password'";
 
-    echo "$sql";
+    // echo "$sql";
 
     // 获取查询结果
     $result = $conn->query($sql);

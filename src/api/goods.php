@@ -1,9 +1,24 @@
 <?php
-    include 'connect.php';
+    // include 'connect.php';
+    //配置参数
+     $servername = 'localhost';
+     $username = 'root';
+     $password = '';
+     $database = 'project';
+    //链接数据库
+     $conn = new mysqli($servername,$username,$password,$database);
+
+    //检测连接
+    if($conn->connect_errno){
+        die('连接失败'.$conn->connect_errno);
+    }
+
+// 设置编码
+    $conn->set_charset('utf8');
     
     $id = isset($_GET['id']) ? $_GET['id'] : '';
 
-    $sql = 'select * from goodlist where id='. $id;
+    $sql = 'select * from goods where id='. $id;
 
 
     // 获取查询结果

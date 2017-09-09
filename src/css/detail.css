@@ -1,52 +1,154 @@
 @charset "UTF-8";
 #head .header .nav .list ul { display: none; }
 
-.content { height: 1000px; padding: 0 140px; }
+.content { height: 2000px; width: 980px; padding: 0 140px 0 110px; }
 
-.content .container .showdetail { border-bottom: 2px solid #ccc; padding-bottom: 15px; }
+.content .showdetail { border-bottom: 2px solid #ccc; padding-bottom: 15px; }
 
-.content .container .showdetail .pf { margin-top: 16px; height: 32px; font-size: 12px; line-height: 32px; color: #333; border-bottom: 2px solid #78B5F4; margin-bottom: 18px; }
+.content .showdetail .pf { margin-top: 16px; height: 32px; font-size: 12px; line-height: 32px; color: #333; border-bottom: 2px solid #78B5F4; margin-bottom: 18px; }
 
-.content .container .showdetail .pf span:last-child { color: #03ADEB; }
+.content .showdetail .pf span:last-child { color: #03ADEB; }
 
-.content .container .showdetail .show ul { float: left; }
+.content .showdetail .show ul { float: left; }
 
-.content .container .showdetail .show ul li { border: 1px solid #ccc; margin-bottom: 5px; height: 72px; }
+.content .showdetail .show ul li { border: 1px solid #ccc; margin-bottom: 5px; height: 72px; }
 
-.content .container .showdetail .show ul li img { width: 72px; height: 72px; }
+.content .showdetail .show ul li:hover { border-color: #78B5F4; }
 
-.content .container .showdetail .show-m { float: left; width: 400px; text-align: center; }
+.content .showdetail .show ul li img { width: 72px; height: 72px; }
 
-.content .container .showdetail .show-m img { width: 350px; height: 350px; margin-bottom: 40px; }
+.content .showdetail .show-m { float: left; width: 400px; text-align: center; position: relative; }
 
-.content .container .showdetail .show-m p { margin-left: 55px; font-size: 12px; color: #666; text-align: left; }
+.content .showdetail .show-m .mainbox { margin-left: 10px; position: relative; width: 350px; height: 350px; }
 
-.content .container .showdetail .show-r { float: left; width: 495px; }
+.content .showdetail .show-m .mainbox img { width: 350px; height: 350px; margin-bottom: 40px; }
 
-.content .container .showdetail .show-r h2 { padding: 10px; height: 30px; line-height: 30px; font-size: 18px; color: #333; border-bottom: 1px dotted #ccc; }
+.content .showdetail .show-m .mainbox .cover { position: absolute; width: 100px; height: 100px; background: #EAFFFF; opacity: 0.6; }
 
-.content .container .showdetail .show-r .show1 { border-bottom: 1px dotted #ccc; padding: 10px; }
+.content .showdetail .show-m .zoom { position: absolute; width: 400px; height: 400px; left: 400px; top: 0; background: #fff; z-index: 10000; overflow: hidden; border: 1px solid #ccc; }
 
-.content .container .showdetail .show-r .show1 p { height: 26px; line-height: 26px; color: #666; font-size: 14px; }
+.content .showdetail .show-m .zoom .zoomImg { width: 700px; height: 700px; position: absolute; }
 
-.content .container .showdetail .show-r .show1 p span { margin: 0 15px 0 4px; }
+.content .showdetail .show-m p { margin-left: 55px; font-size: 12px; color: #666; text-align: left; }
 
-.content .container .showdetail .show-r .show1 p:nth-child(3) .spp::before { content: '￥'; }
+.content .showdetail .show-r { float: left; width: 495px; }
 
-.content .container .showdetail .show-r .show1 p:last-child { color: #D11010; }
+.content .showdetail .show-r h2 { padding: 10px; height: 30px; line-height: 30px; font-size: 18px; color: #333; border-bottom: 1px dotted #ccc; }
 
-.content .container .showdetail .show-r .show1 p:last-child span { color: #D91010; }
+.content .showdetail .show-r .show1 { border-bottom: 1px dotted #ccc; padding: 10px; }
 
-.content .container .showdetail .show-r .show1 p:last-child span::before { content: '￥'; }
+.content .showdetail .show-r .show1 p { height: 26px; line-height: 26px; color: #666; font-size: 14px; }
 
-.content .container .showdetail .show-r .show2 { padding: 5px; }
+.content .showdetail .show-r .show1 p span { margin: 0 15px 0 4px; }
 
-.content .container .showdetail .show-r .show2 p { height: 28px; line-height: 28px; color: #666; font-size: 14px; }
+.content .showdetail .show-r .show1 p:nth-child(3) .spp::before { content: '￥'; }
 
-.content .container .showdetail .show-r .buycar { width: 473px; height: 74px; border: 1px solid #F5DEBC; background: #FFFCF3; line-height: 74px; padding-left: 22px; }
+.content .showdetail .show-r .show1 p:last-child { color: #D11010; }
 
-.content .container .showdetail .show-r span { font-size: 12px; color: #666; }
+.content .showdetail .show-r .show1 p:last-child span { color: #D91010; }
 
-.content .container .showdetail .show-r button { width: 12px; height: 12px; border: 0 none; text-align: center; line-height: 12px; color: #000; margin-left: 5px; }
+.content .showdetail .show-r .show1 p:last-child span::before { content: '￥'; }
 
-.content .container .showdetail .show-r input { width: 32px; height: 22px; margin-left: 5px; }
+.content .showdetail .show-r .show2 { padding: 5px; }
+
+.content .showdetail .show-r .show2 p { height: 28px; line-height: 28px; color: #666; font-size: 14px; }
+
+.content .showdetail .show-r .buycar { width: 473px; height: 74px; border: 1px solid #F5DEBC; background: #FFFCF3; line-height: 74px; padding-left: 22px; }
+
+.content .showdetail .show-r .buycar span { float: left; }
+
+.content .showdetail .show-r .buycar .buyjian, .content .showdetail .show-r .buycar .buyjia { margin-top: 24px; float: left; display: inline-block; width: 24px; height: 24px; border: 1px solid #ccc; text-align: center; line-height: 24px; color: #00f; border-radius: 3px; font-size: 18px; }
+
+.content .showdetail .show-r .buycar .buyjian:hover, .content .showdetail .show-r .buycar .buyjia:hover { cursor: pointer; }
+
+.content .showdetail .show-r .buycar .buyqty { margin-top: 24px; float: left; width: 32px; height: 22px; text-align: center; }
+
+.content .showdetail .show-r .buycar .add-car { width: 100px; height: 24px; line-height: 24px; color: #fff; background: #3DD3EB; font-size: 18px; padding: 0 5px; margin-left: 20px; margin-top: 24px; text-align: center; border-radius: 4px; }
+
+.content .showdetail .show-r .buycar .add-car:hover { cursor: pointer; }
+
+.content .show-l { margin-top: 20px; float: left; width: 198px; }
+
+.content .show-l .tuijian { border: 1px solid #ccc; }
+
+.content .show-l .tuijian dt { width: 196px; height: 33px; line-height: 33px; color: #333333; font-family: 微软雅黑, Arial, verdana, Helvetica; font-size: 15px; font-weight: bold; text-align: center; margin: 1px; border-bottom: 1px solid #e4e4e4; }
+
+.content .show-l .tuijian dd { border-bottom: 1px dashed #e4e4e4; text-align: center; padding-bottom: 10px; }
+
+.content .show-l .tuijian dd img { width: 100px; height: 100px; margin: 0 auto; }
+
+.content .show-l .tuijian dd p { font-size: 12px; line-height: 16px; color: #666; }
+
+.content .show-l .tuijian dd p:last-child { color: #f00; }
+
+.content .show-l .tuijian dd:last-child { border-bottom: 0 none; }
+
+.content .show-l .history { margin-top: 10px; border: 1px solid #ccc; }
+
+.content .show-l .history dt { width: 196px; height: 33px; line-height: 33px; color: #333333; font-family: 微软雅黑, Arial, verdana, Helvetica; font-size: 15px; font-weight: bold; text-align: center; margin: 1px; border-bottom: 1px solid #e4e4e4; }
+
+.content .show-l .history dd { padding: 0 10px; height: 93px; border-bottom: 1px dotted #ccc; }
+
+.content .show-l .history dd img { margin-top: 10px; width: 72px; height: 72px; float: left; }
+
+.content .show-l .history dd div { float: right; }
+
+.content .show-l .history dd div p { font-size: 12px; text-align: left; width: 96px; overflow: hidden; text-overflow: ellipsis; color: #666; }
+
+.content .show-l .history dd div p:first-child { margin-top: 20px; }
+
+.content .show-r { margin-top: 20px; width: 760px; float: right; }
+
+.content .show-r .show-rt { width: 764px; height: 260px; border: 1px solid #ccc; }
+
+.content .show-r .show-rt h3 { height: 32px; border-bottom: 1px solid #ccc; padding-left: 30px; line-height: 32px; }
+
+.content .show-r .show-rt .dapei { padding: 20px; }
+
+.content .show-r .show-rt .dapei .dapei1 { margin-top: 17px; text-align: center; float: left; width: 140px; }
+
+.content .show-r .show-rt .dapei .dapei1 img { width: 100px; height: 100px; }
+
+.content .show-r .show-rt .dapei .dapei1 p { font-size: 12px; color: #666; }
+
+.content .show-r .show-rt .dapei .plus { margin-left: 30px; margin-top: 5px; float: left; border: 1px solid #ccc; padding: 10px; }
+
+.content .show-r .show-rt .dapei .plus .dapei11 { text-align: center; float: left; width: 140px; }
+
+.content .show-r .show-rt .dapei .plus .dapei11 img { width: 100px; height: 100px; }
+
+.content .show-r .show-rt .dapei .plus .dapei11 p { font-size: 12px; color: #666; }
+
+.content .show-r .show-rt .dapei .dapei2 { margin-left: 13px; float: left; }
+
+.content .show-r .show-rt .dapei .dapei2 p { font-size: 14px; height: 30px; line-height: 30px; }
+
+.content .show-r .show-rt .dapei .dapei2 p:nth-of-type { margin-top: 30px; }
+
+.content .show-r .show-rt .dapei .dapei2 button { width: 90px; height: 32px; background: #FF9706; line-height: 32px; text-align: center; color: #fff; border: 0 none; border-radius: 5px; margin-top: 30px; }
+
+.content .show-r .tab-head { margin-top: 14px; }
+
+.content .show-r .tab-head ul { border-bottom: 2px solid #78B5F4; }
+
+.content .show-r .tab-head ul li { float: left; width: 140px; height: 34px; border-right: 2px solid #E5E5E5; background: #F3F3F3; line-height: 34px; text-align: center; color: #000; }
+
+.content .show-r .tab-head ul .active { color: #fff; background: #78B5F4; }
+
+.content .show-r .tab-content .tabt { margin-top: 10px; }
+
+.content .show-r .tab-content .tabt-1 p { height: 30px; line-height: 30px; font-size: 14px; border-bottom: 2px solid #ccc; }
+
+.content .show-r .tab-content .tabt-2 ul li { border-bottom: 1px solid #ccc; height: 80px; font-size: 12px; color: #666; }
+
+.content .show-r .tab-content .tabt-2 ul li .li-lmsg { padding-top: 10px; float: left; width: 600px; }
+
+.content .show-r .tab-content .tabt-2 ul li .li-rmsg { float: left; }
+
+.content .show-r .tab-content .tabt-2 ul li .li-rmsg p { margin-top: 8px; }
+
+.content .show-r .tab-content .tabt-3 { height: 80px; border: 1px solid #ccc; background: #eee; }
+
+.content .show-r .tab-content .tabt-3 p { line-height: 30px; font-size: 16px; color: #666; }
+
+.content .show-r .tab-content .tabt-3 p span { color: #f00; }

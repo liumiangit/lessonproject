@@ -1,61 +1,81 @@
 #head .header .nav .list ul { display: none; }
 
-.login { height: 500px; margin: 10px 140px 30px 140px; border: 1px solid #C6E6F3; padding: 50px 30px 0 20px; width: 983px; }
+.loginR { height: 500px; margin: 10px 140px 30px 140px; border: 1px solid #C6E6F3; padding: 50px 30px 0 20px; width: 983px; }
 
-.login .log-in { width: 464px; height: 464px; float: left; border-right: 2px solid #929292; }
+.loginR .login { width: 464px; height: 464px; float: left; border-right: 2px solid #929292; }
 
-.login .log-in p:nth-child(1) { width: 400px; height: 38px; line-height: 38px; background: #E4E4E4; color: #6B6B6B; border-bottom: 5px solid #45CBFD; padding-left: 38px; }
+.loginR .login p:nth-child(1) { width: 400px; height: 38px; line-height: 38px; background: #E4E4E4; color: #6B6B6B; border-bottom: 5px solid #45CBFD; padding-left: 38px; }
 
-.login .log-in p:nth-child(1) span { color: #45CBFD; margin-left: 5px; }
+.loginR .login p:nth-child(1) span { color: #45CBFD; margin-left: 5px; }
 
-.login .log-in p:nth-child(2) { margin-left: 50px; margin-top: 37px; }
+.loginR .login p:nth-child(2) { margin-left: 50px; margin-top: 37px; position: relative; }
 
-.login .log-in p:nth-child(2) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
+.loginR .login p:nth-child(2) .alert1 { position: absolute; top: 34px; left: 60px; width: 300px; height: 20px; }
 
-.login .log-in p:nth-child(2) input { width: 206px; height: 24px; }
+.loginR .login p:nth-child(2) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
 
-.login .log-in p:nth-child(3) { margin-left: 50px; margin-top: 33px; }
+.loginR .login p:nth-child(2) input { width: 206px; height: 24px; }
 
-.login .log-in p:nth-child(3) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
+.loginR .login p:nth-child(3) { margin-left: 50px; margin-top: 33px; position: relative; }
 
-.login .log-in p:nth-child(3) input { width: 206px; height: 24px; }
+.loginR .login p:nth-child(3) .alert2 { position: absolute; top: 34px; left: 60px; width: 300px; height: 20px; }
 
-.login .log-in p:nth-child(3) a { display: inline-block; height: 24px; line-height: 24px; font-size: 12px; text-align: center; color: #34B5E8; margin-left: 5px; }
+.loginR .login p:nth-child(3) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
 
-.login .log-in p:nth-child(4) { margin-left: 50px; margin-top: 33px; }
+.loginR .login p:nth-child(3) input { width: 206px; height: 24px; }
 
-.login .log-in p:nth-child(4) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
+.loginR .login p:nth-child(3) a { display: inline-block; height: 24px; line-height: 24px; font-size: 12px; text-align: center; color: #34B5E8; margin-left: 5px; }
 
-.login .log-in p:nth-child(4) input { width: 56px; height: 22px; }
+.loginR .login p:nth-child(4) { margin-left: 50px; margin-top: 33px; position: relative; }
 
-.login .log-in p:nth-child(4) .code { color: #0067E6; display: inline-block; height: 14px; width: 40px; background: #EEEEEE; line-height: 14px; margin-left: 5px; }
+.loginR .login p:nth-child(4) .alert3 { position: absolute; top: 34px; left: 60px; width: 300px; height: 20px; }
 
-.login .log-in button { width: 90px; height: 30px; background: #359BDD; color: #fff; font-size: 14px; line-height: 30px; text-align: center; border: 0 none; border-radius: 2px; margin-left: 165px; margin-top: 33px; }
+.loginR .login p:nth-child(4) span { display: inline-block; width: 59px; height: 24px; line-height: 24px; font-size: 12px; text-align: center; }
 
-.login .log-in p:nth-of-type(5) { margin-top: 33px; font-size: 12px; height: 18px; line-height: 18px; color: #666666; }
+.loginR .login p:nth-child(4) input { width: 56px; height: 22px; }
 
-.login .log-in a img { margin-top: 5px; }
+.loginR .login p:nth-child(4) .code { color: #0067E6; display: inline-block; height: 20px; width: 50px; background: #EEEEEE; line-height: 20px; margin-left: 5px; }
 
-.login .log-in a:nth-of-type(1) { margin-left: 50px; }
+.loginR .login p:nth-child(4) .tip1 { width: 120px; color: #0ef; }
 
-.login .register { float: left; padding-left: 26px; margin-bottom: 4px; }
+.loginR .login button { width: 90px; height: 30px; background: #359BDD; color: #fff; font-size: 14px; line-height: 30px; text-align: center; border: 0 none; border-radius: 2px; margin-left: 165px; margin-top: 33px; }
 
-.login .register p:first-child { width: 400px; height: 38px; padding-left: 38px; font-size: 18px; background: #E4E4E4; border-bottom: 5px solid #FACE32; line-height: 38px; }
+.loginR .login p:nth-of-type(5) { margin-top: 33px; font-size: 12px; height: 18px; line-height: 18px; color: #666666; }
 
-.login .register p:first-child span { font-size: 18px; margin-left: 5px; color: #FACE32; }
+.loginR .login a img { margin-top: 5px; }
 
-.login .register p.tle { margin-top: 34px; margin-left: 33px; width: 400px; }
+.loginR .login a:nth-of-type(1) { margin-left: 50px; }
 
-.login .register p.tle span { display: inline-block; height: 22px; width: 60px; line-height: 22px; font-size: 12px; color: #666666; }
+.loginR .register { float: left; padding-left: 26px; margin-bottom: 4px; }
 
-.login .register p.tle input { width: 206px; height: 22px; }
+.loginR .register .showpass { width: 160px; margin-left: 118px; }
 
-.login .register p.vcode input { width: 56px; height: 22px; }
+.loginR .register .showpass li { float: left; width: 50px; height: 6px; border: 1px solid #fff; }
 
-.login .register p.vcode .codeText { color: #0067E6; display: inline-block; height: 14px; width: 40px; background: #EEEEEE; line-height: 14px; margin-left: 5px; text-align: center; }
+.loginR .register .tle { position: relative; }
 
-.login .register p:last-of-type { margin-top: 32px; padding-left: 94px; font-size: 12px; color: #666; }
+.loginR .register .tle span.alert { position: absolute; top: 30px; left: 60px; width: 300px; height: 20px; }
 
-.login .register p:last-of-type a { color: #00B6F2; }
+.loginR .register p:first-child { width: 400px; height: 38px; padding-left: 38px; font-size: 18px; background: #E4E4E4; border-bottom: 5px solid #FACE32; line-height: 38px; }
 
-.login .register button { width: 90px; height: 30px; background: #359BDD; color: #fff; font-size: 14px; line-height: 30px; text-align: center; border: 0 none; border-radius: 2px; margin-left: 165px; margin-top: 33px; }
+.loginR .register p:first-child span { font-size: 18px; margin-left: 5px; color: #FACE32; }
+
+.loginR .register p.tle { margin-top: 34px; margin-left: 33px; width: 400px; }
+
+.loginR .register p.tle span { display: inline-block; height: 22px; width: 60px; line-height: 22px; font-size: 12px; color: #666666; }
+
+.loginR .register p.tle input { width: 206px; height: 22px; }
+
+.loginR .register p.vcode input { width: 56px; height: 22px; }
+
+.loginR .register p.vcode .codeText { color: #0067E6; display: inline-block; height: 20px; width: 50px; background: #EEEEEE; line-height: 20px; margin-left: 5px; text-align: center; }
+
+.loginR .register p.vcode .tip2 { display: inline-block; width: 120px; color: #0ef; text-align: center; }
+
+.loginR .register p:nth-of-type(4) { margin-top: 20px; }
+
+.loginR .register p:last-of-type { margin-top: 32px; padding-left: 94px; font-size: 12px; color: #666; }
+
+.loginR .register p:last-of-type a { color: #00B6F2; }
+
+.loginR .register button { width: 90px; height: 30px; background: #359BDD; color: #fff; font-size: 14px; line-height: 30px; text-align: center; border: 0 none; border-radius: 2px; margin-left: 165px; margin-top: 33px; }

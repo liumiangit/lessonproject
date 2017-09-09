@@ -21,6 +21,10 @@ a { text-decoration: none; }
 
 .head .sign ul li:nth-child(2), .head .sign ul li:nth-child(3) { margin-left: 5px; }
 
+.head .sign ul li .user-na { color: #58bc58; padding: 0 10px; }
+
+.head .sign ul .btnout:hover { color: #f00; cursor: pointer; }
+
 .head .infor { float: right; margin-right: 40px; }
 
 .head .infor ul .inforli { float: left; height: 31px; line-height: 31px; position: relative; }
@@ -43,7 +47,7 @@ a { text-decoration: none; }
 
 .head .infor ul .inforli:hover .account { display: block; background: #fff; border-top: 3px solid #fff; }
 
-.head .infor ul .inforli:first-child:hover { background: #fff; }
+.head .infor ul .inforli:first-child:hover { background: #fff; border-color: #ccc; }
 
 .head .infor ul .inforli:nth-child(3) a { border-right: 0 none; }
 
@@ -79,6 +83,16 @@ a { text-decoration: none; }
 
 .search .cargoods { position: absolute; top: 42px; right: 16px; width: 307px; border: 1px solid #ccc; z-index: 1000; display: none; }
 
+.search .cargoods ::-webkit-scrollbar { width: 4px; height: 6px; }
+
+.search .cargoods ::-webkit-scrollbar-track-piece { background-color: #eee; margin: -2px; }
+
+.search .cargoods ::-webkit-scrollbar-thumb { background: #000; min-height: 150px; min-width: 150px; border-radius: 10px; }
+
+.search .cargoods ::-webkit-scrollbar-thumb:vertical:hover { background: red; }
+
+.search .cargoods ::-webkit-scrollbar-thumb:horizontal:hover { background: red; }
+
 .search .cargoods .carlist { max-height: 300px; overflow: auto; }
 
 .search .cargoods .carlist li { height: 66px; border-bottom: 1px dotted #ccc; background: #fff; }
@@ -109,7 +123,7 @@ a { text-decoration: none; }
 
 .search .cargoods .carbot p .str2::before { content: '￥'; }
 
-.search .cargoods .carbot button { width: 100px; height: 30px; background: #FC1C5A; line-height: 30px; text-align: center; color: #fff; border: 0 none; }
+.search .cargoods .carbot a { display: inline-block; width: 100px; height: 30px; background: #FC1C5A; line-height: 30px; text-align: center; color: #fff; border: 1px solid #ccc; padding: 0 5px; border-radius: 3px; }
 
 .nav { padding: 0 32px; width: 1200px; height: 40px; background: #110F10; }
 
@@ -117,9 +131,11 @@ a { text-decoration: none; }
 
 .nav .list .listname { display: block; background: #02B2ED; color: #fff; line-height: 40px; text-align: center; }
 
-.nav .list ul { position: absolute; background: #fff; top: 40px; left: 0; }
+.nav .list .listname:hover { cursor: pointer; }
 
-.nav .list ul .firstli { padding: 0 0 0 20px; height: 82px; border-bottom: 1px solid #E7E7E7; background: #F8F8F8; position: relative; }
+.nav .list ul { z-index: 1000; position: absolute; background: #fff; top: 40px; left: 0; }
+
+.nav .list ul .firstli { padding: 0 0 0 18px; height: 82px; border-bottom: 1px solid #E7E7E7; background: #F8F8F8; border-left: 2px solid #F8F8F8; position: relative; }
 
 .nav .list ul .firstli p { height: 26px; line-height: 26px; color: #333333; font-size: 14px; font-weight: bold; }
 
@@ -129,7 +145,7 @@ a { text-decoration: none; }
 
 .nav .list ul .firstli a:hover { color: #02B2ED; }
 
-.nav .list ul .firstli:hover { background: #fff; border-left: 2px solid #02B2ED; border-bottom: 0 none; z-index: 1000; width: 208px; }
+.nav .list ul .firstli:hover { background: #fff; border-left-color: #02B2ED; z-index: 1000; width: 208px; }
 
 .nav .list ul .firstli:hover .sidenav { display: block; }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #head .nav .list ul { display: none; }
 
 .current { padding: 0 30px; width: 1200px; margin-top: 15px; height: 34px; line-height: 34px; font-size: 14px; }
@@ -11,6 +12,8 @@
 .box .box-l { float: left; width: 230px; }
 
 .box .box-l .selist p { height: 34px; border-bottom: 1px solid #E0E0E0; background: #EDEDED; font-size: 14px; line-height: 34px; padding-left: 40px; color: #333; position: relative; }
+
+.box .box-l .selist p:hover { cursor: pointer; }
 
 .box .box-l .selist p i { display: inline-block; position: absolute; top: 0; left: 10px; color: #f00; }
 
@@ -110,13 +113,19 @@
 
 .box .goodlist ul li p:nth-of-type(2) { font-size: 14px; height: 24px; color: #FF1A3A; line-height: 24px; }
 
+.box .goodlist ul li p:nth-of-type(2) span:nth-child(2) { margin-left: 8px; }
+
+.box .goodlist ul li p:nth-of-type(2) .sqty { margin-left: 10px; color: #666; }
+
+.box .goodlist ul li p:nth-of-type(2) .sqty::before { content: '销量:'; }
+
 .box .goodlist ul li div button { border: 0 none; }
 
 .box .goodlist ul li div button:hover { cursor: pointer; }
 
 .box .goodlist ul li div button:first-child { width: 90px; height: 24px; background: #FF1A3A; border-radius: 3px; color: #fff; }
 
-.box .goodlist ul li div button:last-child { width: 58px; height: 24px; background: #EFEFEF; color: #666; border: 1px solid #dfdfdf; margin-left: 10px; border-radius: 3px; }
+.box .goodlist ul li div button:last-child { width: 58px; height: 24px; background: #EFEFEF; color: #666; border: 1px solid #dfdfdf; margin-left: 20px; border-radius: 3px; }
 
 .box .page { line-height: 60px; height: 60px; float: right; }
 

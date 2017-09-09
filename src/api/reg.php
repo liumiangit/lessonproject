@@ -10,25 +10,47 @@
             * 对输入进行过滤
             * 对输出进行处理
      */
-    include 'connect.php';
+    // include 'connect.php';
+    //配置参数
+     $servername = 'localhost';
+     $username = 'root';
+     $password = '';
+     $database = 'project';
+    //链接数据库
+     $conn = new mysqli($servername,$username,$password,$database);
+
+    //检测连接
+    if($conn->connect_errno){
+        die('连接失败'.$conn->connect_errno);
+    }
+
+// 设置编码
+    $conn->set_charset('utf8');
     
     $username = isset($_GET['username']) ? $_GET['username'] : '';
-    $password = isset($_GET['password']) ? $_GET['password'] : '123456';
+    $password = isset($_GET['password']) ? $_GET['password'] : '';
     $email = isset($_GET['email']) ? $_GET['email'] : '';
     $grade = isset($_GET['grade']) ? $_GET['grade'] : '';
     $gender = isset($_GET['gender']) ? $_GET['gender'] : '';
     $birthday = isset($_GET['birthday']) ? $_GET['birthday'] : '';
     $phone = isset($_GET['phone']) ? $_GET['phone'] : '';
 
-    //查看用户名是否已经存在
-    $sql = "select username from user where username='$username'";
-    $result = $conn->query($sql);
+    $commit = isset($_GET['commit']) ? $_GET['commit'] : '';
+    // 当只有用户名传入时
+    if($username&&(!$password)){
+        //查看用户名是否已经存在
+        $sql = "select username from user where username='$username'";
+        $result = $conn->query($sql);
 
-    // 如果用户名已经存在
-    // 给前端返回一个fail
-    if($result->num_rows>0){
-        echo "fail";
-    }else{
+        // 如果用户名已经存在
+        // 给前端返回一个fail
+        if($result->num_rows>0){
+            echo "fail";
+        }else{
+            echo "ok";
+        }
+    }
+    if($commit){
         // 密码md5加密
         $password = md5($password);
 
@@ -53,10 +75,6 @@
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
-
-    
-    
-
     // 释放查询内存(销毁)
     //$result->free();
 

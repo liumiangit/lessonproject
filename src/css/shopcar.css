@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.holder { height: 1000px; }
+
+.carcnt { width: 1000px; padding: 0 132px; }
+
+.carcnt .carhead { height: 60px; line-height: 60px; border-bottom: 2px solid #efefef; }
+
+.carcnt .carhead img { float: left; margin-top: 10px; }
+
+.carcnt .carhead span { margin-left: 20px; font-size: 26px; }
+
+.carcnt .cargoods { width: 998px; border: 1px solid #efefef; border-top: 2px solid #efefef; }
+
+.carcnt .cargoods .car-h { height: 34px; border-bottom: 1px solid #ccc; }
+
+.carcnt .cargoods .car-h span { float: left; line-height: 34px; text-align: center; color: #000; width: 165px; }
+
+.carcnt .cargoods .car-list li { height: 120px; border-bottom: 1px solid #ccc; }
+
+.carcnt .cargoods .car-list li .img-c { width: 120px; height: 120px; float: left; margin-right: 40px; }
+
+.carcnt .cargoods .car-list li .name-c { float: left; font-size: 14px; line-height: 22px; color: #666; width: 160px; margin-top: 30px; }
+
+.carcnt .cargoods .car-list li .goodsqty { float: left; padding: 46px; }
+
+.carcnt .cargoods .car-list li .goodsqty span { float: left; display: inline-block; width: 30px; height: 22px; border: 1px solid #ccc; border-radius: 3px; line-height: 20px; text-align: center; }
+
+.carcnt .cargoods .car-list li .goodsqty span:hover { cursor: pointer; }
+
+.carcnt .cargoods .car-list li .goodsqty span:active { background: #58bc58; color: #fff; }
+
+.carcnt .cargoods .car-list li .goodsqty .qty-c { float: left; width: 30px; height: 20px; text-align: center; }
+
+.carcnt .cargoods .car-list li .price-c { float: left; width: 120px; margin-top: 46px; padding-left: 40px; }
+
+.carcnt .cargoods .car-list li .price-c::before { content: '￥'; }
+
+.carcnt .cargoods .car-list li .aprice-c { float: left; width: 120px; margin-top: 46px; padding-left: 40px; }
+
+.carcnt .cargoods .car-list li .aprice-c::before { content: '￥'; }
+
+.carcnt .cargoods .car-list li .del-c { float: left; width: 30px; height: 25px; border: 1px solid #ccc; line-height: 25px; text-align: center; margin-top: 46px; margin-left: 54px; font-size: 18px; }
+
+.carcnt .cargoods .car-list li .del-c:hover { cursor: pointer; }
+
+.carcnt .cargoods .car-list li .del-c:active { background: #58bc58; color: #fff; }

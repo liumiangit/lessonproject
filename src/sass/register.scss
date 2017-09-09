@@ -1,13 +1,13 @@
 #head .header .nav .list ul{
     display:none;
 }
-.login{
+.loginR{
     height:500px;
     margin:10px 140px 30px 140px;
     border:1px solid #C6E6F3;
     padding:50px 30px 0 20px;
     width:983px;
-    .log-in{
+    .login{
         width:464px;
         height: 464px;
         float:left;
@@ -29,6 +29,14 @@
         p:nth-child(2){
             margin-left:50px;
             margin-top:37px;
+            position:relative;
+            .alert1{
+                position:absolute;
+                top:34px;
+                left:60px;
+                width:300px;
+                height:20px;
+            }
             span{
                 display:inline-block;
                 width:59px;
@@ -45,6 +53,14 @@
         p:nth-child(3){
             margin-left:50px;
             margin-top:33px;
+            position:relative;
+            .alert2{
+                position:absolute;
+                top:34px;
+                left:60px;
+                width:300px;
+                height:20px;
+            }
             span{
                 display:inline-block;
                 width:59px;
@@ -70,6 +86,14 @@
         p:nth-child(4){
             margin-left:50px;
             margin-top:33px;
+            position:relative;
+            .alert3{
+                position:absolute;
+                top:34px;
+                left:60px;
+                width:300px;
+                height:20px;
+            }
             span{
                display:inline-block;
                 width:59px;
@@ -85,11 +109,15 @@
             .code{
                 color:#0067E6;
                 display:inline-block;
-                height:14px;
-                width:40px;
+                height:20px;
+                width:50px;
                 background:#EEEEEE;
-                line-height: 14px;
+                line-height: 20px;
                 margin-left:5px;
+            }
+            .tip1{
+               width:120px; 
+               color:#0ef;
             }
         }
         button{
@@ -127,6 +155,26 @@
         float:left;
         padding-left:26px;
         margin-bottom:4px;
+        .showpass{
+            width:160px;
+            margin-left:118px;
+            li{
+                float:left;
+                width:50px;
+                height:6px;
+                border:1px solid #fff;
+            }
+        }
+        .tle{
+            position:relative;
+            span.alert{
+                position:absolute;
+                top:30px;
+                left:60px;
+                width:300px;
+                height:20px;
+            }
+        }
         p:first-child{
             width:400px;
             height:38px;
@@ -166,13 +214,22 @@
             .codeText{
                 color:#0067E6;
                 display:inline-block;
-                height:14px;
-                width:40px;
+                height:20px;
+                width:50px;
                 background:#EEEEEE;
-                line-height: 14px;
+                line-height: 20px;
                 margin-left:5px;
                 text-align:center;   
             }
+            .tip2{
+                display:inline-block;
+                width:120px;
+                color:#0ef;
+                text-align:center;
+            }
+        }
+        p:nth-of-type(4){
+            margin-top:20px;
         }
         p:last-of-type{
             margin-top:32px;
